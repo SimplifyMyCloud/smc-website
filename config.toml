@@ -1,7 +1,6 @@
-baseurl = "https://username.github.io"
+baseurl = "https://simplifymy.cloud"
 DefaultContentLanguage = "en"
-#DefaultContentLanguage = "ja"
-title = "Beautiful Hugo"
+title = "Simplify My Cloud"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsStyle = "trac"
@@ -11,18 +10,18 @@ pygmentsCodefencesGuessSyntax = true
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+#googleAnalytics = "UA-89675533-1"
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "Build a beautiful and simple website in minutes"
+  subtitle = "Infrastructure Culture through automation and empathy"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
-  comments = true
-  readingTime = true
+  comments = false
+  readingTime = false
   useHLJS = true
   socialShare = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
@@ -40,33 +39,33 @@ pygmentsCodefencesGuessSyntax = true
 #  desc = "Hexagon"
 
 [Author]
-  name = "Some Person"
-  website = "yourwebsite.com"
-  email = "youremail@domain.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  github = "username"
-  gitlab = "username"
-  bitbucket = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  vk = "username"
-  paypal = "username"
-  telegram = "username"
+  name = "SimplifyMy.Cloud"
+  website = "https://simplifymy.cloud"
+  email = "info@simplifymy.cloud"
+  #facebook = "username"
+  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "SimplifyMyCloud"
+  gitlab = "SimplifyMyCloud"
+  #bitbucket = "username"
+  twitter = "e30chris"
+  #reddit = "username"
+  #linkedin = "username"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  #instagram = "username"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  #spotify = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #paypal = "username"
+  #telegram = "username"
 
 [[menu.main]]
     name = "Blog"
-    url = ""
+    url = "https://theargo.io"
     weight = 1
 
 [[menu.main]]
@@ -75,29 +74,29 @@ pygmentsCodefencesGuessSyntax = true
     weight = 3
 
 [[menu.main]]
-    identifier = "samples"
-    name = "Samples"
+    identifier = "infra_layers"
+    name = "Infrastructure Layers"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
+    parent = "infra_layers"
+    name = "App"
+    url = "page/app-layer"
     weight = 1
 
 [[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
+    parent = "infra_layers"
+    name = "Service"
+    url = "page/service-layer"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
+    parent = "infra_layers"
+    name = "Foundation"
+    url = "page/foundation-layer"
     weight = 3
 
 [[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
+    name = "Consulting"
+    url = "page/consulting"
+    weight = 4
