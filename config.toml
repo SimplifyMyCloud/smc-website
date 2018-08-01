@@ -18,12 +18,12 @@ pygmentsCodefencesGuessSyntax = true
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
-  commit = false
   rss = true
   comments = false
   readingTime = false
   useHLJS = true
   socialShare = true
+  commit = "https://github.com/SimplifyMyCloud/smc-website/tree/"
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
