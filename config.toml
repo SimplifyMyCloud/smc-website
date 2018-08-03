@@ -10,13 +10,13 @@ pygmentsCodefencesGuessSyntax = true
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
-#googleAnalytics = "UA-89675533-1"
+googleAnalytics = "UA-89675533-1"
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
   subtitle = "Infrastructure Culture through automation and empathy"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
+  logo = "img/smc-icon.png"
+  favicon = "img/smc-favicon.ico"
   dateFormat = "January 2, 2006"
   rss = true
   comments = false
