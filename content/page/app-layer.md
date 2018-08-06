@@ -11,14 +11,14 @@ comments: false
 
 ---
 
-The App Layer enables developers to experierment freely with new ideas, without asking for approval to use an already approved service.  Once Kubernetes is approved and deployed into the infrastructutre state, a dev can freely deploy into Kubernetes by simply adding a Helm chart to the App Layer git repo, allowing Ansible to then deploy into the environment.
+The App Layer enables developers to experiment freely with new ideas, without asking for approval to use an already approved service.  Once Kubernetes is approved and deployed into the infrastructure state, a dev can freely deploy into Kubernetes by simply adding a Helm chart to the App Layer git repo, allowing Ansible to then deploy into the environment.
 
 ---
 
 ## App Layer Empathy:
   - dev empathy by providing freedom to tinker on already deployed services
   - ops empathy by knowing that services being deployed into have already been configured for logging, monitoring, observability, and right-sized
-  - business empahty by allowing for demo environments to be deployed with just access to [Ansible Tower](https://www.ansible.com/products/tower), and a few buttons clicked
+  - business empathy by allowing for demo environments to be deployed with just access to [Ansible Tower](https://www.ansible.com/products/tower), and a few buttons clicked
 
 ---
 
@@ -43,7 +43,7 @@ This layers infrastructure state is ensured using [Ansible](https://www.ansible.
 
   - *Container baked instances*
     
-    A baked container instnace is best practices when using a container optimzed OS like [CoreOS](https://coreos.com/), [RancherOS](https://rancher.com/rancher-os/), or [Google Container Optimized OS](https://cloud.google.com/container-optimized-os/).  Since these OS's are typically read-only file systems, they are baked by default.  The only change that occurs is configuring which container to pull and run on the OS boot.
+    A baked container instance is best practices when using a container optimized OS like [CoreOS](https://coreos.com/), [RancherOS](https://rancher.com/rancher-os/), or [Google Container Optimized OS](https://cloud.google.com/container-optimized-os/).  Since these OS's are typically read-only file systems, they are baked by default.  The only change that occurs is configuring which container to pull and run on the OS boot.
   
   ---
 

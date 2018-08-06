@@ -1,4 +1,4 @@
-#### The goal of this project is to provide a best practices, simple, automation starting point for Google Cloud, AWS and Azure.  Each decision is based on current documentation of the cloud or tool, the layers are highly opionated and explained in detail on [here](app-layer.html), [here](foundation-layer.html), and [here](service-layer.html).
+#### The goal of this project is to provide a best practices, simple, automation starting point for Google Cloud, AWS and Azure.  Each decision is based on current documentation of the cloud or tool, the layers are highly opinionated and explained in detail on [here](app-layer.html), [here](foundation-layer.html), and [here](service-layer.html).
 
 - Deliverable Timeline:
   - Google Cloud August 2018 ~ [Github Repo](https://github.com/SimplifyMyCloud/GCP-InfrastructureState "Github repo")
