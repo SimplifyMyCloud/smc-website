@@ -13,10 +13,10 @@ The Service Layer enables the DevOps culture within the company.  If developers 
 
 ---
 
-## Service Layer Empathy:
-  - dev empathy by providing already wired in services to then consume
-  - ops empathy by allowing the proper wiring to be completed before releasing the service to the business
-  - business empathy by knowing that services being used have been agreed upon and correctly configured by both operations and development to be redundant and cost optimized
+## Service Layer enabling DevOps:
+  - compassion for developers by providing already wired in services to then deploy applications into
+  - compassion for operations by allowing the proper wiring to be completed before releasing the service to the business
+  - compassion for the business by knowing that services being used have been agreed upon and correctly configured by both operations and development to be redundant and cost optimized
 
 ---
 
@@ -25,30 +25,58 @@ This layers infrastructure state is ensured using [Terraform](https://www.terraf
 ---
 
 ## Service Layer contents:
-  - Helm Charts
-  - Binary baked compute instances
-  - Container baked instances
+  - Cloud native services
+  - Baked Virtual Machines
+  - Container optimzed VMs with baked cloud-init
+  - Monitoring
+  - Observability
+  - Logging transport layer
+  - API Gateways
 
 
 ---
 
 ## Descriptions:
 
-  - *Helm Charts*
-    
-    [Helm](https://helm.sh/) charts are used to deploy, and orchestrate, applications and services into Kubernetes.  Kubernetes will already be running as ensured by the Service Layer, and ready to accept Helm charts.  Other Kubernetes deployment methods can be used but this repo has the strong opinion on Helm.
+  - *Cloud Native Services*
+
+    Cloud native services are any service hosted by, managed, and guaranteed by the cloud provider.  S3 storage and Google Storage Buckets would be excellent examples of cloud native service layer services, RDS and CloudSQL hosted databases being another.  The service layer ensure the cloud native service is configured and ready to be deployed into.  
+
+  ---
+
+  - *Monitoring*
+
+    Monitoring is defined as a system that reports when a service, server, or system has failed.  Monitoring is reactive and is always indicating something that has already occurred.  A correctly configured monitoring platform should only fire alerts to humans when a human needs to make a decision on how to react to the outage.  
+
+  ---
+
+  - *Observability*
+
+    Observability is defined as using events and tracing to measure the current health of the system.  Observability prevents outages by identifying unhealthy infrastructure, enabling the infrastructure to _fix_ itself.
+
+  ---
+
+  - *Logging Transport Layer*
+
+    The logging transport layer is the plumbing of the infrastructure and has the sole responsibility of moving all the logs to the correct ingestion point, be it archival storage or a logging analytics service.
+
+  ---
+
+  - *API Gateways*
+
+    The API Gateway or Cloud Endpoints are the front end of the application which serve the API to the world.  
   
   ---
 
-  - *Binary baked compute instances*
+  - *Binary Baked Compute Instances*
     
-    "Baked" refers to the process of using an automated build systems to snapshot the OS after the application binary has been installed and configured on the compute instance.  Once the instance is fully configured and ready to run in an environment, it is snapshotted, *aka baked*, and stored as a *immutable object* that can be deployed and booted, with a known and expected instance state that cannot, and will not, be changed once deployed to the environment.  All baked instances are versioned using [SemVer](https://semver.org/), any changes necessary to the baked instance, would require a bump in version number of the instance object.
+    "Baked" refers to the process of using an automated build system to snapshot the OS after the application binary has been installed and configured on the compute instance.  Once the instance is fully configured and ready to run in an environment, it is snapshotted, *aka baked*, and stored as an *immutable object* that can be deployed and booted, with a known and expected instance state that cannot, and will not, be changed once deployed to the environment.  All baked instances are versioned using [SemVer](https://semver.org/). Any changes necessary to the baked instance would require a bump in version number of the instance object.
   
   ---
 
   - *Container baked instances*
     
-    A baked container instance is best practices when using a container optimized OS like [CoreOS](https://coreos.com/), [RancherOS](https://rancher.com/rancher-os/), or [Google Container Optimized OS](https://cloud.google.com/container-optimized-os/).  Since these OS's are typically read-only file systems, they are baked by default.  The only change that occurs is configuring which container to pull and run on the OS boot.
+    A baked container instance is for running a container that is not yet Kubernetes optimized and ready for orchestration.   A container optimized OS like [CoreOS](https://coreos.com/), [RancherOS](https://rancher.com/rancher-os/), or [Google Container Optimized OS](https://cloud.google.com/container-optimized-os/) is preferred over a full OS distro as they are small, secure and do one thing well, run a container.  Since these OS's are typically read-only file systems, they are baked by default.  The only change that occurs is configuring which container to pull and run on the OS boot via `cloud-init` configuration scripts run on boot.
 
 
   

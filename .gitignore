@@ -1,1 +1,4 @@
+# ignore the theme directory
 themes/beautifulhugo/
+# ignore the public output directory
+public/

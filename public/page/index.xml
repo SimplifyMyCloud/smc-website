@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Beautiful Hugo</title>
-    <link>https://username.github.io/page/</link>
-    <description>Recent content in Pages on Beautiful Hugo</description>
+    <title>Pages on Simplify My Cloud</title>
+    <link>https://simplifymy.cloud/page/</link>
+    <description>Recent content in Pages on Simplify My Cloud</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <managingEditor>info@simplifymy.cloud (SimplifyMy.Cloud)</managingEditor>
+    <webMaster>info@simplifymy.cloud (SimplifyMy.Cloud)</webMaster>
     
-	<atom:link href="https://username.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://simplifymy.cloud/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About me</title>
-      <link>https://username.github.io/page/about/</link>
+      <title>About SimplifyMy.Cloud</title>
+      <link>https://simplifymy.cloud/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>https://username.github.io/page/about/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
- I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+      <author>info@simplifymy.cloud (SimplifyMy.Cloud)</author>
+      <guid>https://simplifymy.cloud/page/about/</guid>
+      <description>We started this project after realizing that we were being recruited to perform the same engineering feat over and over for different companies. A well engineered cloud starting point is not difficult nor should it be. We have published what we believe to be a well engineered, secure on day one, simple cloud structure starting with Google Cloud and then covering AWS and Azure. Using the documentation from the clouds themselves, along with the tooling best practices, we have built a simple starting point to ensure a secure and simple cloud platform to build on top of.</description>
+    </item>
+    
+    <item>
+      <title>App Layer</title>
+      <link>https://simplifymy.cloud/page/app-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@simplifymy.cloud (SimplifyMy.Cloud)</author>
+      <guid>https://simplifymy.cloud/page/app-layer/</guid>
+      <description>Description The goal of the App Layer is the orchestration of applications and services running on the Service Layer.
+The App Layer enables developers to experiment freely with new ideas, without asking for approval to deploy into running services in the dev environment. It allows for developers to be confident the infrastructure they developed and tested against in the test environment is a clone of production. It allows for developers to understand and feel confident in the production environment as its only accessible by automation and not humans.</description>
+    </item>
+    
+    <item>
+      <title>Consulting</title>
+      <link>https://simplifymy.cloud/page/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@simplifymy.cloud (SimplifyMy.Cloud)</author>
+      <guid>https://simplifymy.cloud/page/consulting/</guid>
+      <description>If you would like help building on top of our repo, we are happy to help at either a daily, weekly or even monthly time schedule.
+Reach out over email to start the conversation.
+info@simplifymy.cloud</description>
+    </item>
+    
+    <item>
+      <title>Foundation Layer</title>
+      <link>https://simplifymy.cloud/page/foundation-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@simplifymy.cloud (SimplifyMy.Cloud)</author>
+      <guid>https://simplifymy.cloud/page/foundation-layer/</guid>
+      <description>Description The goal of the Foundation Layer is to ensure the state and maintain the perimeter security of the cloud.
+The Foundation Layer is the bedrock of the cloud, ensuring a known and easily verifiable state of the security of the cloud. All infrastructure lives in a git repo, enabling the Foundation Layer to be protected from single person decisions, enabling multiple git pull request approvers before any state change is allowed.</description>
+    </item>
+    
+    <item>
+      <title>Service Layer</title>
+      <link>https://simplifymy.cloud/page/service-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@simplifymy.cloud (SimplifyMy.Cloud)</author>
+      <guid>https://simplifymy.cloud/page/service-layer/</guid>
+      <description>The goal of the Service Layer is the ensured state of services needed to run the applications in the App Layer.
+The Service Layer enables the DevOps culture within the company. If developers are writing applications and operations are ensuring the state of the cloud, the Service layer is where those two teams meet. If the developers are wrapping their application in a rkt container, operations are responsible for wiring up the Kubernetes service into the cloud.</description>
     </item>
     
   </channel>
