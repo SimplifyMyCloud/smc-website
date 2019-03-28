@@ -14,7 +14,7 @@ The Foundation Layer is the bedrock of the cloud, ensuring a known and easily ve
 - Foundation Layer enabling DevOps:
   - compassion for developers by providing at least two sets of eyes for any changes to firewalls or critical security points
   - compassion for operations by providing a known security state that cannot be changed with out ops approval on the pull request
-  - compassion for the busiess by providing an always known, and easily verifiable security state that cannot be changed without approval from each team, dev, ops and business
+  - compassion for the business by providing an always known, and easily verifiable security state that cannot be changed without approval from each team, dev, ops and business
 
 
 This layers infrastructure state is ensured using [Terraform](https://www.terraform.io/).  This project has the strong opinion that Terraform is the best tool to ensure the static immutable state of the infrastructure at the Service Layer.  A simple cron run by Ansible Tower, will every 20 minutes execute a `terraform plan` to verify the state of the infrastructure matches the Terraform state file.  With no reported changes the infrastructure is verified in the correct known state.  Any changes reported by Terraform would be an escalated Defcon level, requiring a human to intervene and manually update the state using `terraform apply`, ensuring the state is brought up the state expected in code.  See the Foundation Layer [README](https://github.com/SimplifyMyCloud/SMCInfrastructureState/tree/gcp_foundation/README.md) for coding standards and naming conventions along with requirements.

@@ -8,7 +8,7 @@ If you would like help building on top of our repo, we are happy to help at eith
 
 Reach out over email to start the conversation.
 
-[info@simplifymy.cloud](info@simplifymy.cloud "info@simplifymy.cloud)
+[info@simplifymy.cloud](info@simplifymy.cloud "info@simplifymy.cloud")
 
 ---
 
